@@ -91,7 +91,6 @@ Resources:
           cd /var/www/html
           aws s3 cp s3://udagram-401182701704/ . --recursive
       ImageId: !Ref AMI
-      KeyName: udagram_key
       IamInstanceProfile:
         Ref: InstanceProfile
       SecurityGroups:
